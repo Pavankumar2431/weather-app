@@ -1,0 +1,51 @@
+.weather-card {
+  height: 200px;
+    width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .weather-details{
+    
+    line-height: 22px;
+  }
+  .weather-date {
+    font-weight: bold;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+@media (max-width:768px){
+  .weather-card{
+    .weather-card {
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+}
